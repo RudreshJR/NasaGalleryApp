@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="5dp"
+        android:padding="@dimen/margin_5dp"
+        android:background="@drawable/curved_rectangle_shape"
+        android:layout_width="165dp"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/nasa_imageView"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/text_size_15sp"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nasa_imageView"
+            tools:text="M33: The Triangulum Galaxycdfdfd" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
